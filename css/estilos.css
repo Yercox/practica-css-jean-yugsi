@@ -39,6 +39,214 @@ footer {
    FUNCIONALIDAD: SERVICIOS (nosotros, menú, galería, contacto)
    ========================================================== */
 /* BEGIN:servicios */
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  margin: 20px auto;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 20px 0;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+}
+
+/* Selector de ID */
+#nosotros {
+  background-color: #fff8e1;
+  padding: 30px;
+}
+
+h2 {
+  color: #c0392b;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 15px 0 8px;
+}
+
+/* Selector descendiente */
+section p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.8;
+  word-spacing: 2px;
+}
+
+/* Selector hermano adyacente */
+h2 + p {
+  color: #555555;
+  font-size: 18px;
+}
+
+/* Selector hermanos generales */
+h2 ~ p {
+  letter-spacing: 1px;
+}
+
+.destacado {
+  color: hsl(25, 80%, 45%);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  color: #c0392b;
+}
+
+a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Pseudoclases en lista: first-child, last-child, nth-child */
+ul {
+  margin: 10px 0 15px 25px;
+  line-height: 2;
+}
+
+ul li:first-child {
+  color: green;
+}
+
+ul li:last-child {
+  color: red;
+}
+
+ul li:nth-child(2) {
+  background-color: #eeeeee;
+}
+
+/* Tarjetas */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarjeta {
+  width: 300px;
+  min-height: 140px;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3498db;
+  border-radius: 12px;
+  margin: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.tarjeta:hover {
+  border-color: #e67e22;
+  background-color: #fff3e0;
+}
+
+/* Imágenes */
+img {
+  border: 3px solid #17324d;
+  border-radius: 10px;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 250px;
+  height: 180px;
+  min-width: 150px;
+  max-width: 100%;
+  margin: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+}
+
+.galeria img:hover {
+  opacity: 0.7;
+  border-color: #e67e22;
+}
+
+/* Tabla */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333333;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #17324d;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+tr:hover td {
+  background-color: #fdebd0;
+}
+
+/* Formulario */
+form {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+/* Pseudoclase :focus */
+input:focus,
+textarea:focus {
+  border: 2px solid #3498db;
+  background-color: #eaf2f8;
+  outline: none;
+}
+
+form button {
+  margin-right: 8px;
+}
+
+.redes {
+  text-align: center;
+}
+
+.redes a {
+  margin: 0 10px;
+}
+
 /* END:servicios */
 
 /* ----------------------------------------------------------
