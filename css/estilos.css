@@ -1,0 +1,403 @@
+/* ==========================================================
+   Burger Rush - Hoja de estilos externa
+   ========================================================== */
+
+/* ---------- BASE (commit inicial) ---------- */
+
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Selector de etiqueta */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ==========================================================
+   FUNCIONALIDAD: INICIO (encabezado, navegación, presentación)
+   ========================================================== */
+/* BEGIN:inicio */
+
+/* Selector de ID + fondos */
+#inicio {
+  background-color: #7b241c;
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 20px 50px;
+  text-align: center;
+  opacity: 0.97;
+}
+
+/* Selector agrupado */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Selector de clase */
+.logo {
+  width: 90px;
+  height: 90px;
+  border: 3px solid #f1c40f;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+/* Selector hijo directo */
+nav > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+/* Pseudoclase :hover */
+nav a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+.lema {
+  font-size: 20px;
+  font-style: italic;
+  word-spacing: 3px;
+  color: hsl(48, 90%, 60%);
+}
+
+.boton,
+button {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #2b2b2b;
+  border: none;
+  padding: 12px 28px;
+  margin-top: 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
+/* Pseudoclase :active */
+.boton:active,
+button:active {
+  background-color: #17324d;
+  color: white;
+}
+
+/* END:inicio */
+
+/* ----------------------------------------------------------
+   (zona separadora entre funcionalidades: no editar)
+   ---------------------------------------------------------- */
+
+/* ==========================================================
+   FUNCIONALIDAD: SERVICIOS (nosotros, menú, galería, contacto)
+   ========================================================== */
+/* BEGIN:servicios */
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  margin: 20px auto;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 20px 0;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+}
+
+/* Selector de ID */
+#nosotros {
+  background-color: #fff8e1;
+  padding: 30px;
+}
+
+h2 {
+  color: #c0392b;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 15px 0 8px;
+}
+
+/* Selector descendiente */
+section p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.8;
+  word-spacing: 2px;
+}
+
+/* Selector hermano adyacente */
+h2 + p {
+  color: #555555;
+  font-size: 18px;
+}
+
+/* Selector hermanos generales */
+h2 ~ p {
+  letter-spacing: 1px;
+}
+
+.destacado {
+  color: hsl(25, 80%, 45%);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  color: #c0392b;
+}
+
+a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Pseudoclases en lista: first-child, last-child, nth-child */
+ul {
+  margin: 10px 0 15px 25px;
+  line-height: 2;
+}
+
+ul li:first-child {
+  color: green;
+}
+
+ul li:last-child {
+  color: red;
+}
+
+ul li:nth-child(2) {
+  background-color: #eeeeee;
+}
+
+/* Tarjetas */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarjeta {
+  width: 300px;
+  min-height: 140px;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3498db;
+  border-radius: 12px;
+  margin: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.tarjeta:hover {
+  border-color: #e67e22;
+  background-color: #fff3e0;
+}
+
+/* Imágenes */
+img {
+  border: 3px solid #17324d;
+  border-radius: 10px;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 250px;
+  height: 180px;
+  min-width: 150px;
+  max-width: 100%;
+  margin: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+}
+
+.galeria img:hover {
+  opacity: 0.7;
+  border-color: #e67e22;
+}
+
+/* Tabla */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333333;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #17324d;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+tr:hover td {
+  background-color: #fdebd0;
+}
+
+/* Formulario */
+form {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+/* Pseudoclase :focus */
+input:focus,
+textarea:focus {
+  border: 2px solid #3498db;
+  background-color: #eaf2f8;
+  outline: none;
+}
+
+form button {
+  margin-right: 8px;
+}
+
+.redes {
+  text-align: center;
+}
+
+.redes a {
+  margin: 0 10px;
+}
+
+/* END:servicios */
+
+/* ----------------------------------------------------------
+   (zona separadora entre funcionalidades: no editar)
+   ---------------------------------------------------------- */
+
+/* ==========================================================
+   RETO: NUEVA SECCIÓN "NUESTRA HISTORIA"
+   ========================================================== */
+/* BEGIN:reto */
+
+#historia {
+  background-color: hsl(210, 50%, 20%);
+  color: #ffffff;
+  padding: 40px 30px;
+  border: 4px dashed #f1c40f;
+  border-radius: 16px;
+}
+
+#historia h2 {
+  color: #f1c40f;
+}
+
+#historia h2 + p {
+  color: #ecf0f1;
+}
+
+.historia-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.historia-imagenes img {
+  width: 300px;
+  height: 200px;
+  max-width: 100%;
+  margin: 10px;
+  border-color: #f1c40f;
+  transition: transform 0.3s;
+}
+
+/* Efecto visual :hover */
+.historia-imagenes img:hover {
+  transform: scale(1.08);
+  border-color: #e67e22;
+}
+
+#historia a {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+#historia a:hover {
+  color: #ffffff;
+  background-color: #e67e22;
+}
+
+/* END:reto */
